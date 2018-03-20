@@ -21,6 +21,7 @@ async def create_pool(loop, **kw):
         loop=loop
     )
 
+
 async def select(sql, args, size=None):
     log(sql, args)
     global __pool
